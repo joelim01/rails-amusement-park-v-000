@@ -1,0 +1,5 @@
+<%= form_tag sessions_path, method: :post, class: "navbar-form navbar-left search-form" do %>
+  <%= text_field_tag('user[name]')%>
+  <%= password_field_tag('user[password]')%>
+  <button type="submit" name="sign in">Sign In</button>
+<% end %>
